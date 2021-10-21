@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(1f4fe4101f5e258329ac42310bd76bd1.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: -webkit-flex;
+    display: -moz-deck;
+    display: -ms-flexbox;
+    display: -moz-grid-line;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 70px;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav-area{
+    list-style: none;
+}
+
+.nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.nav-area li a{
+    transition: .3;
+    color: #fff;
+}
+
+.nav-area li a:hover{
+    color: #f8f8f857;
+}
+
+.btn-area{
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 38px;
+    border-radius: 5px;
+    background: #f8f8f857;
+}
+
+input{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+.photo-gallery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.pic{
+    position: relative;
+    height: 230px;
+    width: 300px;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.text{
+    position: center;
+    color: #fff;
+    font-weight: normal;
+    font-size: 30px;
+    margin: 100px 600;
+}
+
+.contact{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+.contact img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
