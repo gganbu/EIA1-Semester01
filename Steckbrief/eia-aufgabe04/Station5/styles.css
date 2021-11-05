@@ -1,0 +1,59 @@
+body {
+    background-image: url("images/bg.png");
+}
+
+.content {
+    background-image: url("images/wrapperbg.png");
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 8%;
+}
+
+p {
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 58%;
+    left: 8%;
+}
+
+.buttons, label {
+    color: white;
+}
+
+.text1 {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+
+.text2 {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+}
+
+.buttons {
+    position: absolute;
+    top: 65%;
+    left: 8%;
+}
+
+.button {
+    position: absolute;
+    top: 80%;
+    left: 8%;
+}

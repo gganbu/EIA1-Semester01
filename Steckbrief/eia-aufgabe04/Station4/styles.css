@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Jellyka";
+    src: url("fonts/Jellyka Delicious Cake.ttf") format("Jellyka"),
+         url("fonts/jellyka_delicious_cake-webfont.woff2") format("jellyka2");
+  }
+
+  body {
+      background-image: url("images/bg.png");
+  }
+
+  .content {
+      background-image: url("images/wrapperbg.png");
+      position: absolute;
+      width: 600px;
+      height: 400px;
+      margin: 0;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    font-size: 70px;
+    font-family: Jellyka;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+  }
+
+  p {
+      font-size: 15px;
+      color: white;
+      position: absolute;
+      top: 58%;
+      left: 8%;
+
+  }
