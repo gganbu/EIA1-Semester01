@@ -1,0 +1,29 @@
+body {
+    background-image: url("images/bg.png");
+}
+
+.content {
+    background-image: url("images/wrapperbg.png");
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.vid {
+    position: absolute;
+    top: 12%;
+    left: 7.5%;
+    z-index: 2;
+}
+
+.bd {
+    position: absolute;
+    top: 70%;
+    left: 62%;
+    z-index: 3;
+}
