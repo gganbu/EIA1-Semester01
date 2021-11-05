@@ -1,0 +1,52 @@
+body {
+    background-image: url("images/bg.png");
+}
+
+h1 {
+    font-size: large;
+    color: white;
+}
+
+.content {
+    background-image: url("images/wrapperbg.png");
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 12%;
+    left: 8%;
+}
+
+.stern1 {
+    position: absolute;
+    top: 53%;
+    left: 8%;
+}
+
+.gelbstern {
+    position: absolute;
+    top: 140px;
+    left: 150px;
+}
+
+.stern2 {
+    position: absolute;
+    top: 270px;
+    left: 255px;
+}
+
+.stern3 {
+    position: absolute;
+    top: 200px;
+    left: 420px;
+}
