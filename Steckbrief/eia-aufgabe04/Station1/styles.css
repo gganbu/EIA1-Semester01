@@ -1,5 +1,5 @@
 body {
-    background-image: url("Steckbrief/eia-aufgabe04/Station1/images/bg.png");
+    background-image: url("images/bg.png");
 }
 
 .ueberschrift {
@@ -11,7 +11,7 @@ body {
 }
 
 .content {
-    background-image: url("Steckbrief/eia-aufgabe04/Station1/images/wrapperbg.png");
+    background-image: url("images/wrapperbg.png");
     width: 600px;
     height: 400px;
     position: absolute;
