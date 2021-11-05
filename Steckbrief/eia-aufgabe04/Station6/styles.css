@@ -1,0 +1,63 @@
+body {
+    background-image: url("images/bg.png");
+}
+
+.content {
+    background-image: url("images/wrapperbg.png");
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 11%;
+  left: 8%;
+}
+
+.s1 {
+    color: white;
+    position: absolute;
+    top: 28%;
+    left: 8%;
+    font-size: 14px;
+}
+
+.s2 {
+    color: white;
+    position: absolute;
+    top: 28%;
+    left: 51%;
+    font-size: 14px;
+}
+
+.h1 {
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    font-size: 16px;
+}
+
+.h2 {
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 36%;
+    font-size: 16px;
+}
+
+.h3 {
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 65%;
+    font-size: 16px;
+}
