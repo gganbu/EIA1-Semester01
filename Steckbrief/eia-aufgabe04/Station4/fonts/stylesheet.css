@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Jellyka Delicious Cake';
+    src: url('JellykaDeliciousCake.eot');
+    src: url('JellykaDeliciousCake.eot?#iefix') format('embedded-opentype'),
+        url('JellykaDeliciousCake.woff2') format('woff2'),
+        url('JellykaDeliciousCake.woff') format('woff'),
+        url('JellykaDeliciousCake.ttf') format('truetype'),
+        url('JellykaDeliciousCake.svg#JellykaDeliciousCake') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,7 +1,12 @@
-@font-face .ttf {
+@font-face {
     font-family: 'Jellyka';
-    src: url("fonts/Jellyka Delicious Cake.ttf") format("Jellyka"),
-         url("fonts/jellyka_delicious_cake-webfont.woff2") format("jellyka2");
+      src: url('fonts/JellykaDeliciousCake.eot'); /* IE9 Compat Modes */
+      src: url('fonts/JellykaDeliciousCake.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('fonts/JellykaDeliciousCake.woff2') format('woff2'), /* Super Modern Browsers */
+          url('fonts/JellykaDeliciousCake.woff') format('woff'), /* Pretty Modern Browsers */
+          url('fonts/JellykaDeliciousCake.ttf')  format('truetype'), /* Safari, Android, iOS */
+          url('fonts/JellykaDeliciousCake.svg') format('svg'); /* Legacy iOS */
+      font-style: normal;
   }
 
   body {
