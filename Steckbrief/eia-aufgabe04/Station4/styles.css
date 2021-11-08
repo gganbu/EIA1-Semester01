@@ -1,11 +1,12 @@
 @font-face .ttf {
-    font-family: "Jellyka";
+    font-family: 'Jellyka';
     src: url("fonts/Jellyka Delicious Cake.ttf") format("Jellyka"),
          url("fonts/jellyka_delicious_cake-webfont.woff2") format("jellyka2");
   }
 
   body {
       background-image: url("images/bg.png");
+      font-family: 'Jellyka';
   }
 
   .content {
@@ -22,7 +23,7 @@
 
   h1 {
     font-size: 70px;
-    font-family: Jellyka;
+    font-family: 'Jellyka';
     color: white;
     position: absolute;
     top: 5%;
