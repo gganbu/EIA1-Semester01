@@ -27,3 +27,7 @@ body {
     left: 62%;
     z-index: 3;
 }
+
+div {
+    column-gap: 10px;
+  }
