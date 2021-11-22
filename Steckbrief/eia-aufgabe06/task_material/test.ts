@@ -1,5 +1,7 @@
 console.log("EIA-Aufgabe 6");
+
 window.addEventListener("load", function () {
+
 var eu2008:number = 4965.7;
 var eu2018:number = 4209.3;
 
