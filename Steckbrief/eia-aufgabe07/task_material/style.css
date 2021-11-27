@@ -1,0 +1,134 @@
+body {
+    background: url(bg.jpg)
+}
+
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+}
+
+#pad {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+}
+
+.blue, .blue2, .blue3 {
+    position: absolute;
+    background-color: #2591fd;
+    border-color: #3c9cfd;
+    border-radius: 15px;        /*rounded edges */   
+    border-width: 5px;          /* -n- */  
+    outline: none;
+}
+
+.pink, .pink2, .pink3, .pink4 {
+    position: absolute;
+    background-color:  #fa3999;
+    border-color: #fd55ac;
+    border-radius: 15px;
+    border-width: 5px;
+    outline: none;
+}
+
+.orange, .orange2 {
+    position: absolute;
+    background-color:  #ff8c00;
+    border-color: #fd9414;
+    border-radius: 15px;
+    border-width: 5px;
+    outline: none;
+}
+
+.blue:hover, .blue2:hover, .blue3:hover, .pink:hover, .pink2:hover, .pink3:hover, .pink4:hover, .orange:hover, .orange2:hover {
+    transform: scale(1.075);
+}
+
+.blue {
+    left: -160px;
+    top: -100px;
+    width: 150px;
+    height: 150px;
+  }
+
+.blue2 {
+    left: 0px;
+    top: -100px;
+    width: 150px;
+    height: 150px;
+}
+
+.blue3 {
+    left: 160px;
+    top: -100px;
+    width: 150px;
+    height: 150px;
+}
+
+
+.pink {
+    left: -160px;
+    top: 60px;
+    width: 150px;
+    height: 150px;
+}
+
+.pink2 {
+    left: 0px;
+    top: 60px;
+    width: 150px;
+    height: 150px;
+}
+
+.pink3 {
+    left: 160px;
+    top: 60px;
+    width: 150px;
+    height: 150px;
+}
+
+.pink4 {
+    left: -160px;
+    top: 220px;
+    width: 150px;
+    height: 150px;
+}
+
+
+.orange {
+    left: 0px;
+    top: 220px;
+    width: 150px;
+    height: 150px;
+}
+
+.orange2 {
+    left: 160px;
+    top: 220px;
+    width: 150px;
+    height: 150px;
+}
+
+
+.playbutton {
+    position: absolute;
+    left: 0px;
+    top: 380px;
+    width: 150px;
+    height: 150px;
+}
+
+.playbutton:hover {
+    transform: scale(1.075);
+}
