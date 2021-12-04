@@ -47,6 +47,7 @@ window.addEventListener("load", function () {
     }
     function recBeat() {
         if (calc(recordIndex) == true) {
+            recordIndex++;
             record();
         }
         else {
@@ -76,6 +77,6 @@ window.addEventListener("load", function () {
     document.querySelector("#playb").addEventListener("click", function () { beatLayout(); });
     document.querySelector("#delb").addEventListener("click", function () { delBeat(); });
     document.querySelector("#rngb").addEventListener("click", function () { remixBeat(); });
-    document.querySelector("#recb").addEventListener("click", function () { recBeat(); recordIndex++; });
+    document.querySelector("#recb").addEventListener("click", function () { recBeat(); });
 });
 //# sourceMappingURL=script.js.map
