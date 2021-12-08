@@ -1,26 +1,26 @@
 window.addEventListener("load", function () {
 
-    var sounds = ["assets/A.mp3", "assets/C.mp3", "assets/F.mp3", "assets/G.mp3", "assets/hihat.mp3", "assets/kick.mp3", "assets/laugh-1.mp3", "assets/laugh-2.mp3", "assets/snare.mp3"];
-    var order = [sounds[1], sounds[2], sounds[3], sounds[4]];
-    var rngbeat = [sounds[5], sounds[6], sounds[7], sounds[8]];
-    var x = 0, recIndex = 0, recordIndex = 0;
+    var sounds : string[] = ["assets/A.mp3", "assets/C.mp3", "assets/F.mp3", "assets/G.mp3", "assets/hihat.mp3", "assets/kick.mp3", "assets/laugh-1.mp3", "assets/laugh-2.mp3", "assets/snare.mp3"];
+    var order : string[] = [sounds[1], sounds[2], sounds[3], sounds[4]];
+    var rngbeat : string[] = [sounds[5], sounds[6], sounds[7], sounds[8]];
+    var x : number = 0, recIndex : number = 0, recordIndex : number = 0;
     
-    var time = setInterval(rythmus, 250);
+    var time : number = setInterval(rythmus, 250);
 
-    function playSample(sounds) {
-        var time = setInterval(sounds, 250);
+    function playSample(sounds : string) {
+        var time : HTMLAudioElement = setInterval(sounds, 250);
         var sound = new Audio(sounds);
         sound.play();
     }
 
-    function delBeat() {
+    function delBeat() : void {
         order.length = 0;
     }
 
-    var beat = new Audio(order[x]);
-    var pb = document.querySelector("#playb");
+    var beat : HTMLAudioElement = new Audio(order[x]);
+    var pb : HTMLElement = document.querySelector("#playb");
 
-    function rythmus() {
+    function rythmus() : void {
         if (x >= order.length)
             x = 0;
         if (pb.getAttribute("class") == "fas fa-pause-circle") {
@@ -30,9 +30,9 @@ window.addEventListener("load", function () {
             }
     }
 
-    var recorder = document.querySelector("#recb");
+    var recorder : HTMLElement = document.querySelector("#recb");
 
-    function beatLayout() {
+    function beatLayout() : void {
         if (pb.getAttribute("class") == "fas fa-pause-circle") {
                 pb.setAttribute("class", "fas fa-play-circle");
                 rythmus();
@@ -46,18 +46,18 @@ window.addEventListener("load", function () {
         }
     }
 
-    var rec = [];
+    var rec : string[] = [];
 
-    function record() {
+    function record() : void {
         order = rec;
         recorder.style.color = "red";
     }
 
-    function calc(recordIndex) {
+    function calc(recordIndex : number) : boolean {
         return recordIndex % 2 == 0;
     }
 
-    function recBeat() {
+    function recBeat() : void {
         if (calc(recordIndex) == true) {
             recordIndex++;
             record();
@@ -67,34 +67,34 @@ window.addEventListener("load", function () {
         }
     }
 
-    var max = rngbeat.length - 1;
+    var max : number = rngbeat.length - 1;
 
-    function rng(max) {
+    function rng(max : number): number {
         max = Math.floor(max);
         return Math.floor(Math.random() * (max + 1));
     }
 
-    function remixBeat() {
-        for (var i = 0; i <= rngbeat.length; i++) {
+    function remixBeat() : void {
+        for (var i : number = 0; i <= rngbeat.length; i++) {
             recorder.style.color = "white";
             order[i] = rngbeat[rng(max)];
             }
     }
 
-    document.querySelector(".blue").addEventListener("click", function () { playSample("assets/A.mp3"); rec[recIndex] = "assets/A.mp3"; recIndex++; record(); });
-    document.querySelector(".blue2").addEventListener("click", function () { playSample("assets/G.mp3"); rec[recIndex] = "assets/G.mp3"; recIndex++; record(); });
-    document.querySelector(".blue3").addEventListener("click", function () { playSample("assets/F.mp3"); rec[recIndex] = "assets/F.mp3"; recIndex++; record(); });
+    document.querySelector(".blue").addEventListener("click", function () : void { playSample("assets/A.mp3"); rec[recIndex] = "assets/A.mp3"; recIndex++; record(); });
+    document.querySelector(".blue2").addEventListener("click", function () : void { playSample("assets/G.mp3"); rec[recIndex] = "assets/G.mp3"; recIndex++; record(); });
+    document.querySelector(".blue3").addEventListener("click", function () : void { playSample("assets/F.mp3"); rec[recIndex] = "assets/F.mp3"; recIndex++; record(); });
 
-    document.querySelector(".pink").addEventListener("click", function () { playSample("assets/G.mp3"); rec[recIndex] = "assets/G.mp3"; recIndex++; record(); });
-    document.querySelector(".pink2").addEventListener("click", function () { playSample("assets/hihat.mp3"); rec[recIndex] = "assets/hihat.mp3"; recIndex++; record(); });
-    document.querySelector(".pink3").addEventListener("click", function () { playSample("assets/kick.mp3"); rec[recIndex] = "assets/kick.mp3"; recIndex++; record(); });
-    document.querySelector(".pink4").addEventListener("click", function () { playSample("assets/laugh-1.mp3"); rec[recIndex] = "assets/laugh-1.mp3"; recIndex++; record(); });
+    document.querySelector(".pink").addEventListener("click", function () : void { playSample("assets/G.mp3"); rec[recIndex] = "assets/G.mp3"; recIndex++; record(); });
+    document.querySelector(".pink2").addEventListener("click", function () : void { playSample("assets/hihat.mp3"); rec[recIndex] = "assets/hihat.mp3"; recIndex++; record(); });
+    document.querySelector(".pink3").addEventListener("click", function () : void { playSample("assets/kick.mp3"); rec[recIndex] = "assets/kick.mp3"; recIndex++; record(); });
+    document.querySelector(".pink4").addEventListener("click", function () : void { playSample("assets/laugh-1.mp3"); rec[recIndex] = "assets/laugh-1.mp3"; recIndex++; record(); });
 
-    document.querySelector(".orange").addEventListener("click", function () { playSample("assets/laugh-2.mp3"); rec[recIndex] = "assets/laugh-2.mp3"; recIndex++; record(); });
-    document.querySelector(".orange2").addEventListener("click", function () { playSample("assets/snare.mp3"); rec[recIndex] = "assets/snare.mp3"; recIndex++; record(); });
+    document.querySelector(".orange").addEventListener("click", function () : void { playSample("assets/laugh-2.mp3"); rec[recIndex] = "assets/laugh-2.mp3"; recIndex++; record(); });
+    document.querySelector(".orange2").addEventListener("click", function () : void { playSample("assets/snare.mp3"); rec[recIndex] = "assets/snare.mp3"; recIndex++; record(); });
 
-    document.querySelector("#playb").addEventListener("click", function () { beatLayout(); });
-    document.querySelector("#delb").addEventListener("click", function () { delBeat(); });
-    document.querySelector("#rngb").addEventListener("click", function () { remixBeat(); });
-    document.querySelector("#recb").addEventListener("click", function () { recBeat(); });
+    document.querySelector("#playb").addEventListener("click", function () : void { beatLayout(); });
+    document.querySelector("#delb").addEventListener("click", function () : void { delBeat(); });
+    document.querySelector("#rngb").addEventListener("click", function () : void { remixBeat(); });
+    document.querySelector("#recb").addEventListener("click", function () : void { recBeat(); });
 });
