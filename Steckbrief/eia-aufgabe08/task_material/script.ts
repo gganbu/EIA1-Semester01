@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
     var time : number = setInterval(rythmus, 250);
 
     function playSample(sounds : string) {
-        var time : HTMLAudioElement = setInterval(sounds, 250);
+        var time = setInterval(sounds, 250);
         var sound = new Audio(sounds);
         sound.play();
     }
