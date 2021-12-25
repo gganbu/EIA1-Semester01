@@ -168,7 +168,7 @@
             });
             setTimeout(function (): void {
                 artyom.obey();
-            },         250);
+            },         5500);
             startArtyom();
         });
         function startArtyom(): void {
