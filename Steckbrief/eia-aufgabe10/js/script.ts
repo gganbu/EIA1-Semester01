@@ -168,7 +168,7 @@
             });
             setTimeout(function (): void {
                 artyom.obey();
-            },         5500);
+            },         5500); //5500ms 5,5sec
             startArtyom();
         });
         function startArtyom(): void {
