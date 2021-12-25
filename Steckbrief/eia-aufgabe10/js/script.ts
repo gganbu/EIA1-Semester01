@@ -163,7 +163,6 @@
     
         document.querySelector("#mic").addEventListener("click", function(): void {
             artyom.say("Hey buddy! Just say Erstelle Aufgabe to use your voice as input :)");
-            artyom.dontObey();
             artyom.initialize({
                 lang: "de-DE"
             });
